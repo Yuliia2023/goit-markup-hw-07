@@ -60,7 +60,7 @@
             </li>
           </ul>
         </address>
-        <button type="button" class="mobile-menu-open">
+        <button type="button" class="mobile-menu-open js-open-menu">
           <svg class="menu-namburger" width="32" height="22">
             <use
               href="./images/icons.svg/symbol-form-modal.svg#icon-menu-hamburger"
@@ -68,9 +68,9 @@
           </svg>
         </button>
       </div>
-      <div class="mobile-menu">
+      <div class="mobile-menu js-menu-container">
         <div class="container mobile-menu-container">
-          <button type="button" class="mobile-menu-close-btn">
+          <button type="button" class="mobile-menu-close-btn js-close-menu">
             <svg class="mobile-menu-close-icon" width="24" height="24">
               <use
                 href="./images/icons.svg/symbol-form-modal.svg#icon-vector-modal"
@@ -79,7 +79,7 @@
           </button>
           <ul class="menu-contacts-list list">
             <li class="menu-contacts-item">
-              <a href="" class="menu-contacts-link link current">Studio</a>
+              <a href="" class="menu-contacts-link link">Studio</a>
             </li>
             <li class="menu-contacts-item">
               <a href="./portfolio.html" class="menu-contacts-link link"
@@ -87,68 +87,72 @@
               >
             </li>
             <li class="menu-contacts-item">
-              <a href="" class="menu-contacts-link link">Contacts</a>
+              <a href="" class="menu-contacts-link link current">Contacts</a>
             </li>
           </ul>
-
-          <ul class="menu-adress-list list">
-            <li class="menu-adress-item">
-              <a href="tel:+110001111111" class="tel-adress-link link"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-            <li class="menu-adress-item">
-              <a href="mailto:info@devstudio.com" class="mail-adress-link link"
-                >info@devstudio.com</a
-              >
-            </li>
-          </ul>
-
-          <ul class="menu-social list list">
-            <li class="menu-social-item">
-              <a href="" class="menu-social-link link">
-                <svg class="team-social-icon" width="16px" height="16">
-                  <use
-                    href="./images/icons.svg/symbol-social.svg#icon-instagram"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="menu-social-item">
-              <a href="" class="menu-social-link link">
-                <svg class="team-social-icon" width="16px" height="16">
-                  <use
-                    href="./images/icons.svg/symbol-social.svg#icon-twitter"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="menu-social-item">
-              <a href="" class="menu-social-link link">
-                <svg class="team-social-icon" width="16px" height="16">
-                  <use
-                    href="./images/icons.svg/symbol-social.svg#icon-facebook"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="menu-social-item">
-              <a href="" class="menu-social-link link">
-                <svg class="team-social-icon" width="16px" height="16">
-                  <use
-                    href="./images/icons.svg/symbol-social.svg#icon-linkedin"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          <div class="mobile-contacts-container">
+            <ul class="menu-adress-list list">
+              <li class="menu-adress-item">
+                <a href="tel:+110001111111" class="tel-adress-link link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="menu-adress-item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="mail-adress-link link"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <div class="menu-social">
+              <ul class="menu-social list list">
+                <li class="menu-social-item">
+                  <a href="" class="menu-social-link link">
+                    <svg class="team-social-icon" width="16px" height="16">
+                      <use
+                        href="./images/icons.svg/symbol-social.svg#icon-instagram"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="menu-social-item">
+                  <a href="" class="menu-social-link link">
+                    <svg class="team-social-icon" width="16px" height="16">
+                      <use
+                        href="./images/icons.svg/symbol-social.svg#icon-twitter"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="menu-social-item">
+                  <a href="" class="menu-social-link link">
+                    <svg class="team-social-icon" width="16px" height="16">
+                      <use
+                        href="./images/icons.svg/symbol-social.svg#icon-facebook"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="menu-social-item">
+                  <a href="" class="menu-social-link link">
+                    <svg class="team-social-icon" width="16px" height="16">
+                      <use
+                        href="./images/icons.svg/symbol-social.svg#icon-linkedin"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </header>
 
     <main>
       <!-- section hero -->
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container hero-content">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <div class="hero-btn">
@@ -247,11 +251,11 @@
             </button>
           </div>
         </div>
-      </section> -->
+      </section>
 
       <!-- section features -->
 
-      <!-- <section class="feature">
+      <section class="feature">
         <div class="container feature-content">
           <h1 class="visually-hidden">Advantages</h1>
           <ul class="feature-list list">
@@ -313,11 +317,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- section -->
 
-      <!-- <section class="work">
+      <section class="work">
         <div class="container">
           <h2 class="work-title">What are we doing</h2>
           <ul class="work-list list">
@@ -347,11 +351,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- section team -->
 
-      <!-- <section class="team">
+      <section class="team">
         <div class="container main-team">
           <h2 class="team-subject">Our Team</h2>
           <ul class="team-list list">
@@ -557,11 +561,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- section costumer -->
 
-      <!-- <section class="customers">
+      <section class="customers">
         <div class="container">
           <h2 class="customers-title">Customers</h2>
           <ul class="customers-list list">
@@ -609,7 +613,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
 
     <!-- section footer -->
