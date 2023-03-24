@@ -44,29 +44,18 @@ body {
 
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 /* -----------------mobile-css------------- */
-
-@media screen and (min-width: 480px) {
-  .container {
-    width: 396px;
-    margin-left: auto;
-    margin-right: auto;
+@media screen and (max-width: 767px) {
+  .header-list {
+    display: none;
   }
-}
-.header-logo {
-  color: var(--title-text-color);
-  text-decoration: none;
-  font-family: Raleway;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.33;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-
-.header-subject {
-  color: var(--accent);
+  .adress-list {
+    display: none;
+  }
 }
 .main-header {
   display: flex;
@@ -78,7 +67,32 @@ body {
 
   background: #ffffff;
 }
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
 
+.header-logo {
+  color: var(--title-text-color);
+  text-decoration: none;
+  font-family: Raleway;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding-bottom: 24px;
+  padding-top: 24px;
+}
+.header-subject {
+  color: var(--accent);
+}
+.main-header {
+  display: flex;
+  align-items: center;
+}
+.header-nav {
+  display: flex;
+}
 .mobile-menu-open {
   background-color: transparent;
   border: none;
@@ -96,6 +110,9 @@ body {
 }
 .mobile-menu-container {
   position: relative;
+
+  padding-top: 80px;
+  padding-bottom: 40px;
 }
 .mobile-menu-close-btn {
   position: absolute;
@@ -116,71 +133,56 @@ body {
   height: 8px;
   fill: currentColor;
 }
-@media screen and (max-width: 767px) {
-  .header-list {
-    display: none;
-  }
-  .adress-list {
-    display: none;
-  }
+.menu-contacts-item {
+  margin-bottom: 40px;
 }
-
-@media screen and (min-width: 768px) {
-  .container {
-    width: 736px;
-  }
+.menu-contacts-item:last-child {
+  margin-bottom: 0;
 }
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
+.menu-adress-list {
+  margin-top: 200px;
 }
-
-/*-------------------------- header logo */
-/* .header {
-  border-bottom: 1px solid #e7e9fc;
-}
-
-.header-logo {
+.menu-contacts-link {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
   color: var(--title-text-color);
-  text-decoration: none;
-  font-family: Raleway;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.33;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  padding-bottom: 24px;
-  padding-top: 24px;
-} */
-/*----------------------------- site nav */
-/* .header-subject {
+}
+.menu-contacts-link:hover,
+.menu-contacts-link:focus {
+  color: var(--accent);
+}
+.menu-contacts-link.current {
   color: var(--accent);
 }
 
-.main-header {
-  display: flex;
-  align-items: center;
+.menu-adress-item {
+  margin-bottom: 40px;
 }
-.header-nav {
-  display: flex;
+.tel-adress-link {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: #4d5ae5;
 }
-
-.header-link {
-  color: var(--title-text-color);
+.mail-adress-link {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 20px;
+  line-height: 1.2;
 
-  padding-top: 24px;
-  padding-bottom: 24px;
-  display: block;
+  letter-spacing: 0.02em;
 
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--primary-text-color);
 }
+/*----------------------------- site nav */
 
+/*
+.header-list {
+  display: flex;
+  gap: 40px;
+  margin-left: 76px;
+}
 .header-link:hover,
 .header-link:focus {
   color: var(--accent);
@@ -203,13 +205,10 @@ body {
   bottom: 0;
 }
 
-.header-list {
-  display: flex;
-  gap: 40px;
-  margin-left: 76px;
-} */
+*/
 
 /* ----------------------site auth */
+
 /* .adress {
   display: flex;
   margin-left: auto;
@@ -235,8 +234,9 @@ body {
 .adress-item + .adress-item {
   margin-left: 40px;
 } */
+
 /*--------------------------- hero */
-/* .hero {
+.hero {
   margin: auto;
   text-align: center;
   max-width: 1440px;
@@ -365,11 +365,10 @@ body {
   width: 8px;
   height: 8px;
   fill: currentColor;
-} */
+}
 
 /*      ------------------------ forma---------- */
-
-/* .form-in-modal {
+.form-in-modal {
   width: 408px;
   margin-left: auto;
   margin-right: auto;
@@ -468,11 +467,11 @@ textarea {
   color: rgba(46, 47, 66, 0.4);
 
   padding-top: 8px;
-} */
+}
 
 /*    --------------- ----------checkbox----- */
 
-/* .form-check-desc {
+.form-check-desc {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17px;
@@ -540,10 +539,10 @@ textarea {
 .check-input:checked + .modal-form-custom-checkbox .checkbox-icon {
   opacity: 1;
   fill: #fff;
-} */
+}
 
 /* -------------- form-button--------------- */
-/* .form-btn {
+.form-btn {
   padding-bottom: 24px;
   margin-top: 24px;
   display: flex;
@@ -581,45 +580,40 @@ textarea {
 .form-button:focus {
   background-color: var(--accent-button-color);
   color: var(--footer-border-text-color);
-} */
+}
 
 /*---------------- section feauteres */
 
-/* .feature {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-.feature-item:not(:last-child) {
-  margin-right: 24px;
+.feature {
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
-.feature-list {
-  display: flex;
+.feature-item {
+  width: 100%;
 }
+
 .feature-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 0px;
   margin-bottom: 8px;
   color: var(--title-text-color);
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
 }
 .feature-text {
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 72px;
   font-size: 16px;
   line-height: 1.5;
-  max-width: 264px;
+  max-width: 396px;
 }
 
 .feature-pic {
-  background: var(--light-background-color);
-  border-radius: 4px;
-  width: 264px;
-  height: 112px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
+  display: none;
 }
 
 .feature-img {
@@ -630,13 +624,12 @@ textarea {
 
   display: flex;
 }
-.feature.item {
-} */
 
 /*--------------------- section work */
-
-/* .work {
-  padding-bottom: 120px;
+.work {
+}
+.work {
+  padding-bottom: 96px;
 }
 .work-title {
   color: var(--title-text-color);
@@ -656,27 +649,29 @@ textarea {
 }
 .work-img {
   display: block;
-} */
+}
 
 /* -------------------section team */
 
-/* .team {
+.team {
   background: var(--light-background-color);
-  padding-bottom: 120px;
-  padding-top: 120px;
+  padding-bottom: 64px;
+  padding-top: 64px;
 }
 .team-img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 .team-list {
-  display: flex;
+  display: block;
+
   gap: 24px;
 }
 .team-item {
-  width: calc((100% - 72) / 4);
+  width: 100%;
   background: var(--primary-white-color);
+  margin-bottom: 72px;
 }
 .borders-content {
   padding: 32px 16px;
@@ -711,7 +706,8 @@ textarea {
 }
 .team-social-list {
   display: flex;
-
+  align-items: center;
+  justify-content: center;
   gap: 24px;
   margin-top: 8px;
 }
@@ -741,13 +737,13 @@ textarea {
   align-items: center;
   width: 100%;
   height: 100%;
-} */
+}
 
 /* ------------------section customer ------------*/
 
-/* .customers {
-  padding-bottom: 120px;
-  padding-top: 120px;
+.customers {
+  padding-bottom: 96px;
+  padding-top: 96px;
 }
 .customers-title {
   margin-top: 0;
@@ -760,14 +756,24 @@ textarea {
 }
 .customers-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 24px;
+  gap: 16px;
 }
 
 .customers-item {
-  width: 168px;
+  width: 190px;
   height: 88px;
+  margin-bottom: 72px;
+  margin-top: 0;
 }
+/* .customers-item:nth-child(even) {
+  margin-right: 0;
+} */
+.customers-item {
+  width: calc((100% - 24px) / 2);
+}
+
 .customers-link {
   display: flex;
   align-items: center;
@@ -794,11 +800,11 @@ textarea {
   width: 104px;
   height: 56px;
   fill: currentColor;
-} */
+}
 
 /* ---------------footer  */
 
-/* .footer {
+.footer {
   background: var(--title-text-color);
   padding-top: 100px;
   padding-bottom: 100px;
@@ -943,7 +949,7 @@ textarea {
   width: 24px;
   height: 24px;
   margin-left: 16px;
-} */
+}
 /* ------------------ */
 
 /* PORTFOLIO */

@@ -1,0 +1,72 @@
+@media screen and (min-width: 768px) {
+  .container {
+    width: 736px;
+  }
+  .feature,
+  .team,
+  .customers,
+  .footer {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  /* ----------------- */
+
+  /* ----------------- */
+
+  .feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .feature-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .feature-title {
+    display: block;
+  }
+  .feature-text {
+    margin-top: 0px;
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 356px;
+  }
+  /* --------------------- */
+  .team-item {
+    width: calc((100% - 24px) / 2);
+    background: var(--primary-white-color);
+    margin-bottom: 64px;
+    column-gap: 0;
+  }
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /* ----------------- */
+  .customers-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .customers-item {
+    width: calc((100% - 48px) / 3);
+  }
+  .customers-item {
+    width: 168px;
+    height: 88px;
+  }
+
+  /* ---------- */
+  /* .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer-social {
+    margin-left: 24px;
+  }
+  .footer-box {
+    margin-top: 72px;
+  } */
+}
