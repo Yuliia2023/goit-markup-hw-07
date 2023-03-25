@@ -1,6 +1,44 @@
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team-item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .container {
     width: 736px;
+  }
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/bg-tab-min.jpg);
+    height: 436px;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/bg-tab-2x-min.jpg);
+    }
+  }
+  .hero-content {
+    padding-top: 112px;
+    padding-bottom: 112px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+  }
+  .hero-title {
+    margin-bottom: 36px;
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
   }
   .feature,
   .team,
@@ -94,8 +132,7 @@
   }
 
   /* ------ */
-  .adress {
-  }
+
   .adress-list {
     display: flex;
     flex-direction: column;
@@ -111,9 +148,9 @@
     color: #434455;
     text-decoration: none;
   }
-
-  /* ---------- */
-  /* .footer-content {
+}
+/* ---------- */
+/* .footer-content {
     display: flex;
     flex-wrap: wrap;
   }
@@ -123,7 +160,7 @@
   .footer-box {
     margin-top: 72px;
   } */
-}
+
 @media screen and (min-width: 768px) {
   .mobile-menu {
     display: none;

@@ -2,6 +2,35 @@
   .container {
     width: 1200px;
   }
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/background.jpg);
+    height: 600px;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/bg-dekstop-2x-min.jpg);
+    }
+  }
+  .hero-content {
+    padding-top: 188px;
+    padding-bottom: 188px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+  }
+  .hero-title {
+    margin-bottom: 48px;
+  }
   .feature,
   .team,
   .customers,
@@ -72,9 +101,14 @@
   }
 
   /* -------------------- */
+  .team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
   .team-item {
     width: calc((100% - 72px) / 4);
     background: var(--primary-white-color);
+    margin-bottom: 0;
   }
   .team-list {
     display: flex;

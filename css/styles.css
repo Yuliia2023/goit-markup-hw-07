@@ -56,6 +56,12 @@ body {
   .adress-list {
     display: none;
   }
+  .team-item:last-child {
+    margin-bottom: 0;
+  }
+  .feature-text:last-child {
+    margin-bottom: 0;
+  }
 }
 .main-header {
   display: flex;
@@ -244,27 +250,41 @@ body {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/background.jpg);
+    url(../images/bg-mob-min.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  height: 600px;
+  height: 432px;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/bg-mob-2x-min.jpg);
+  }
 }
 .hero-content {
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding-top: 112px;
+  padding-bottom: 112px;
   margin: auto;
+  padding-left: 0;
+  padding-right: 0;
 }
 .hero-title {
   margin-top: 0;
-  margin-bottom: 48px;
+  margin-bottom: 72px;
   margin-left: auto;
   margin-right: auto;
 
   color: var(--primary-white-color);
+  font-style: normal;
   font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
-  max-width: 496px;
+  font-size: 36px;
+  line-height: 1.11;
+  max-width: 320px;
 }
 
 .hero-button {
@@ -653,8 +673,8 @@ textarea {
 
 .team {
   background: var(--light-background-color);
-  padding-bottom: 64px;
-  padding-top: 64px;
+  padding-bottom: 96px;
+  padding-top: 96px;
 }
 .team-img {
   display: block;
@@ -671,6 +691,7 @@ textarea {
   background: var(--primary-white-color);
   margin-bottom: 72px;
 }
+
 .borders-content {
   padding: 32px 16px;
   text-align: center;
@@ -765,9 +786,7 @@ textarea {
   margin-bottom: 72px;
   margin-top: 0;
 }
-/* .customers-item:nth-child(even) {
-  margin-right: 0;
-} */
+
 .customers-item {
   width: calc((100% - 24px) / 2);
 }
@@ -809,7 +828,7 @@ textarea {
   display: flex;
 }
 
-.footer-logo {
+/* .footer-logo {
   color: var(--accent);
   font-family: "Raleway";
   font-style: normal;
@@ -947,7 +966,7 @@ textarea {
   width: 24px;
   height: 24px;
   margin-left: 16px;
-}
+} */
 /* ------------------ */
 
 /* PORTFOLIO */
