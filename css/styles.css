@@ -59,7 +59,7 @@ body {
   .team-item:last-child {
     margin-bottom: 0;
   }
-  .feature-text:last-child {
+  .feature-item:last-child {
     margin-bottom: 0;
   }
 }
@@ -67,8 +67,6 @@ body {
   display: flex;
   text-align: center;
   justify-content: space-between;
-  padding-bottom: 24px;
-  padding-top: 24px;
   border-bottom: 1px solid #e7e9fc;
 
   background: #ffffff;
@@ -96,6 +94,8 @@ body {
 }
 .header-nav {
   display: flex;
+
+  padding: 24px 0;
 }
 @media screen and (max-width: 767px) {
   .mobile-menu {
@@ -139,7 +139,7 @@ body {
   .mobile-menu-close-btn {
     position: absolute;
     top: 24px;
-    right: 24px;
+    right: 0;
     background-color: transparent;
 
     line-height: 0;
@@ -148,7 +148,6 @@ body {
     width: 24px;
     height: 24px;
     border-radius: 50%;
-
     border: 1px solid #2e2f42;
   }
   .mobile-menu-close-icon {
@@ -190,8 +189,6 @@ body {
     line-height: 1.11;
     letter-spacing: 0.02em;
     color: #4d5ae5;
-    /* height: 40px;
-    width: 353px; */
   }
   .mail-adress-link {
     font-weight: 500;
@@ -611,13 +608,14 @@ textarea {
 
 .feature-item {
   width: 100%;
+  margin-bottom: 72px;
 }
 
 .feature-title {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 8px;
   color: var(--title-text-color);
   font-weight: 700;
@@ -626,7 +624,7 @@ textarea {
 }
 .feature-text {
   margin-top: 0px;
-  margin-bottom: 72px;
+  margin-bottom: 0;
   font-size: 16px;
   line-height: 1.5;
   max-width: 396px;
@@ -686,7 +684,7 @@ textarea {
 .team-list {
   display: block;
 
-  gap: 24px;
+  column-gap: 24px;
 }
 .team-item {
   width: 100%;
@@ -779,7 +777,7 @@ textarea {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 16px;
+  column-gap: 16px;
 }
 
 .customers-item {
@@ -975,20 +973,20 @@ textarea {
 /* PORTFOLIO */
 /* button filters */
 .btn {
-  padding-top: 96px;
-  padding-bottom: 120px;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 .btn-list {
   list-style: none;
   text-decoration: none;
 
   display: flex;
+  flex-wrap: wrap;
   margin-top: 0px;
-  margin-bottom: 72px;
-
+  margin-bottom: 48px;
   padding-left: 0;
-  justify-content: center;
-  gap: 24px;
+  gap: 16px;
+  column-gap: 24px;
 }
 .btn-link {
   display: inline-block;
@@ -1017,8 +1015,7 @@ textarea {
 .btn-list .link:focus {
   color: var(--primary-white-color);
   background: var(--accent-button-color);
-  /* box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12); */
+
   border-color: var(--accent-button-color);
 }
 
@@ -1028,7 +1025,7 @@ textarea {
 }
 .advantages-item {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  width: calc(100% - 3 / 48px);
+  width: 100%;
   position: relative;
   overflow: hidden;
 }
@@ -1043,7 +1040,7 @@ textarea {
 }
 .advantages-img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 .advantages-list {

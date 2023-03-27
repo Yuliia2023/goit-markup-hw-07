@@ -54,6 +54,7 @@
 
   .feature-item {
     width: calc((100% - 72px) / 4);
+    margin-bottom: 0;
   }
   .feature-pic {
     background: var(--light-background-color);
@@ -66,20 +67,18 @@
   }
   .feature-title {
     margin-top: 8px;
-    margin-bottom: 8px;
-    color: var(--title-text-color);
+
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
   }
   .feature-text {
-    margin-top: 0px;
     margin-bottom: 0px;
     font-size: 16px;
     line-height: 1.5;
     max-width: 264px;
   }
-
+  /* -------------------- */
   .work-title {
     color: var(--title-text-color);
     text-align: center;
@@ -123,6 +122,7 @@
   .customers-item {
     width: 168px;
     height: 88px;
+    margin-bottom: 0;
   }
 
   /* ------------ */
@@ -190,13 +190,24 @@
   .footer-form-button:hover {
     background-color: var(--accent-button-color);
   }
-  /* .footer {
-    display: flex;
+  /*  -----portfolio--- */
+  .btn {
+    padding-top: 100px;
+    padding-bottom: 120px;
   }
-  .footer-content {
-    display: flex;
+  .btn-list {
+    margin-top: 0px;
+    margin-bottom: 72px;
+
+    gap: 24px;
   }
-  .footer-social {
-    margin-left: 120px;
-  } */
+
+  /* ---- */
+  .advantages-item {
+    width: calc((100% - 48px) / 3);
+  }
+  .advantages-list {
+    gap: 48px;
+    column-gap: 24px;
+  }
 }

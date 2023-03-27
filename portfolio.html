@@ -19,6 +19,9 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
   </head>
   <body>
     <header class="header">
@@ -69,7 +72,9 @@
             </li>
             <li><button type="button" class="btn-link link">App</button></li>
             <li><button type="button" class="btn-link link">Design</button></li>
-            <li><button type="button" class="btn-link link">Design</button></li>
+            <li>
+              <button type="button" class="btn-link link">Marketing</button>
+            </li>
           </ul>
 
           <h1 hidden>Portfolio</h1>
@@ -78,9 +83,18 @@
             <li class="advantages-item">
               <a class="advantages-link link" href=""
                 ><div class="advantages-overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/pic1.jpg            1x,
+                        ./images/pic1-desktop-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                  </picture>
                   <img
                     class="advantages-img"
-                    src="./images/pic8-min.jpg"
+                    src="./images/pic1.jpg"
                     alt="app"
                     width="360"
                     height="300"
@@ -103,9 +117,18 @@
             <li class="advantages-item">
               <a class="advantages-link link" href="">
                 <div class="advantages-overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/pic2.jpg            1x,
+                        ./images/pic2-desktop-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                  </picture>
                   <img
                     class="advantages-img"
-                    src="./images/pic7-min.jpg"
+                    src="./images/pic2.jpg"
                     alt="phone"
                     width="360"
                     height="300"
@@ -125,9 +148,18 @@
             <li class="advantages-item">
               <a class="advantages-link" href="">
                 <div class="advantages-overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/pic3.jpg            1x,
+                        ./images/pic3-desktop-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                  </picture>
                   <img
                     class="advantages-img"
-                    src="./images/pic-min.jpg"
+                    src="./images/pic3.jpg"
                     alt="laptop"
                     width="360"
                     height="300"
@@ -147,9 +179,18 @@
             <li class="advantages-item">
               <a class="advantages-link" href="">
                 <div class="advantages-overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/pic4.jpg            1x,
+                        ./images/pic4-desktop-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                  </picture>
                   <img
                     class="advantages-img"
-                    src="./images/pic1-min.jpg"
+                    src="./images/pic4.jpg"
                     alt="driver"
                     width="360"
                     height="300"
@@ -170,9 +211,18 @@
             <li class="advantages-item">
               <a class="advantages-link" href="">
                 <div class="advantages-overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/pic5.jpg            1x,
+                        ./images/pic5-desktop-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                  </picture>
                   <img
                     class="advantages-img"
-                    src="./images/pic2-min.jpg"
+                    src="./images/pic5.jpg"
                     alt="mobile"
                     width="360"
                     height="300"
@@ -192,9 +242,18 @@
             <li class="advantages-item">
               <a class="advantages-link" href="">
                 <div class="advantages-overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/pic6.jpg            1x,
+                        ./images/pic6-desktop-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                  </picture>
                   <img
                     class="advantages-img"
-                    src="./images/pic3-min.jpg"
+                    src="./images/pic6.jpg"
                     alt="girl"
                     width="360"
                     height="300"
@@ -214,9 +273,18 @@
             <li class="advantages-item">
               <a class="advantages-link" href="">
                 <div class="advantages-overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/pic7.jpg            1x,
+                        ./images/pic7-desktop-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                  </picture>
                   <img
                     class="advantages-img"
-                    src="./images/pic4-min.jpg"
+                    src="./images/pic7.jpg"
                     alt="website"
                     width="360"
                     height="300"
@@ -237,9 +305,20 @@
             <li class="advantages-item">
               <a class="advantages-link" href="">
                 <div class="advantages-overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/pic8.jpg            1x,
+                        ./images/pic8-desktop-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source />
+                    <source />
+                  </picture>
                   <img
                     class="advantages-img"
-                    src="./images/pic5-min.jpg"
+                    src="./images/pic8.jpg"
                     alt="food"
                     width="360"
                     height="300"
@@ -259,9 +338,15 @@
             <li class="advantages-item">
               <a class="advantages-link" href="">
                 <div class="advantages-overlay">
+                  <picture>
+                    <source
+                      srcset="./images/pic9 1x, ./images/pic9-desktop-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                  </picture>
                   <img
                     class="advantages-img"
-                    src="./images/pic6-min.jpg"
+                    src="./images/pic9.jpg"
                     alt="coffe"
                     width="360"
                     height="300"
