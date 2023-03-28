@@ -794,7 +794,7 @@ textarea {
 }
 
 .customers-item {
-  width: calc((100% - 24px) / 2);
+  width: calc((100% - 16px) / 2);
 }
 
 .customers-link {
@@ -932,7 +932,7 @@ textarea {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 398px;
+
   margin-top: 72px;
 }
 .footer-form-title {
