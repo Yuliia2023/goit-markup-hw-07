@@ -98,7 +98,11 @@
     font-size: 16px;
     line-height: 1.5;
     color: #2e2f42;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
+  .header-link:hover,
   .header-link:focus {
     color: var(--accent);
   }
@@ -117,7 +121,7 @@
     background: #404bbf;
     border-radius: 2px;
     left: 0;
-    bottom: -24px;
+    bottom: -26px;
   }
 
   /* ------ */
@@ -146,9 +150,12 @@
     height: 88px;
   }
   /* ----------------- */
-  .footer-content-box {
-    display: flex;
+  .footer-content {
+    width: 565рх;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
+
   .footer-social {
     margin-top: 0;
     margin-left: 120px;

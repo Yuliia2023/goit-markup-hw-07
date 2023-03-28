@@ -62,6 +62,9 @@ body {
   .feature-item:last-child {
     margin-bottom: 0;
   }
+  .customers-item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
 }
 .main-header {
   display: flex;
@@ -623,6 +626,8 @@ textarea {
   line-height: 1.1;
 }
 .feature-text {
+  font-style: normal;
+  font-weight: 500;
   margin-top: 0px;
   margin-bottom: 0;
   font-size: 16px;
@@ -667,6 +672,7 @@ textarea {
 }
 .work-img {
   display: block;
+  width: 100%;
 }
 
 /* -------------------section team */
@@ -826,6 +832,14 @@ textarea {
   padding-top: 96px;
   padding-bottom: 96px;
   display: flex;
+  margin: auto;
+}
+.footer-content-logo {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
 }
 .footer-logo {
   color: var(--accent);
@@ -846,13 +860,27 @@ textarea {
   color: var(--footer-border-text-color);
   margin-bottom: 0px;
   margin-top: 16px;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 268px;
+  text-align: left;
 }
 .footer-content {
-  display: inline-block;
+  /* display: inline-block; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .footer-social {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  /* display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+ 
+ */
   max-width: 208px;
   margin-top: 72px;
 }
@@ -869,7 +897,7 @@ textarea {
 .footer-social-item {
   width: 40px;
   height: 40px;
-  background: rgba(255, 255, 255, 0.1);
+  background: #4d5ae5;
   border-radius: 50%;
   justify-content: center;
 }
@@ -901,7 +929,9 @@ textarea {
   margin-top: 16px;
 }
 .footer-box {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 398px;
   margin-top: 72px;
 }
@@ -911,15 +941,18 @@ textarea {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
-  margin: 0;
 }
 
 .footer-form {
   display: flex;
-  margin-top: 16px;
+  flex-wrap: wrap;
+
+  width: 100%;
 }
 .footer-form-input {
-  width: 264px;
+  margin-bottom: 16px;
+  max-width: 398px;
+  width: 100%;
   height: 40px;
   background-color: transparent;
   border: 1px solid #ffffff;
@@ -942,7 +975,7 @@ textarea {
 .footer-form-button {
   width: 168px;
   height: 40px;
-  margin-left: 24px;
+  margin: auto;
   background: #4d5ae5;
   border-radius: 4px;
   font-weight: 500;
