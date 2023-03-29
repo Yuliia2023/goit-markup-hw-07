@@ -5,4 +5,13 @@
   .tel-adress-link {
     font-size: 36px;
   }
+  .menu-social {
+    max-width: 328px;
+  }
+  .menu-social-item {
+    margin-right: 56px;
+  }
+  .modal {
+    min-width: 408px;
+  }
 }

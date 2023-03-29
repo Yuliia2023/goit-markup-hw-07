@@ -113,6 +113,7 @@
   .team-list {
     display: flex;
   }
+
   /* -------------------------- */
   .customers-list {
     display: flex;
@@ -187,7 +188,9 @@
     margin-left: 120px;
     margin-right: 80px;
   }
-
+  .footer-social-list {
+    gap: 24px;
+  }
   .footer-box {
     display: inline-block;
     width: 453px;
