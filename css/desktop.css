@@ -170,34 +170,47 @@
   .footer {
     padding-top: 100px;
     padding-bottom: 100px;
-  }
-  .footer-content {
-    display: flex;
-  }
-  .footer-form {
     display: flex;
   }
 
+  .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-text {
+    margin-right: 0;
+  }
   .footer-social {
     display: inline-block;
     max-width: 208px;
     margin-left: 120px;
+    margin-right: 80px;
   }
+
   .footer-box {
-    margin-left: 80px;
+    display: inline-block;
+    width: 453px;
+
     margin-top: 0;
   }
-  .footer-social-link:hover {
-    background: var(--focus-icon-color);
-  }
-  .footer-form-button:focus,
-  .footer-form-button:hover {
-    background-color: var(--accent-button-color);
+
+  .footer-form {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 16px;
   }
   .footer-form-input {
     width: 264px;
-    margin-bottom: 0;
+    height: 40px;
   }
+
+  .footer-form-button {
+    width: 168px;
+    height: 40px;
+    margin-left: 24px;
+  }
+
   /*  -----portfolio--- */
   .btn {
     padding-top: 100px;

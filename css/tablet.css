@@ -140,6 +140,13 @@
     letter-spacing: 0.04em;
     color: #434455;
     text-decoration: none;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .adress-link:hover,
+  .adress-link:focus {
+    color: var(--accent);
   }
   /* ------------------ */
   .customers-item {
@@ -150,18 +157,46 @@
     height: 88px;
   }
   /* ----------------- */
+  .footer {
+    display: flex;
+  }
+  .footer-content-logo {
+    display: block;
+    text-align: left;
+    margin: 0;
+  }
+  .footer-text {
+    margin-right: 24px;
+  }
   .footer-content {
     width: 565рх;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
-
   .footer-social {
-    margin-top: 0;
-    margin-left: 120px;
+    display: inline-block;
+    max-width: 208px;
+    margin: 0;
+  }
+
+  .footer-form {
+    display: flex;
+    flex-wrap: nowrap;
   }
   .footer-box {
+    display: inline-block;
     width: 453px;
+  }
+  .footer-form-title {
+    margin-top: 0;
+  }
+  .footer-form-input {
+    max-width: 264px;
+    margin: 0;
+  }
+  .footer-form-button {
+    margin-left: 24px;
   }
 
   /*    portfolio--- */

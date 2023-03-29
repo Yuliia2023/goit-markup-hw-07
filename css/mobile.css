@@ -2,4 +2,7 @@
   .container {
     width: 396px;
   }
+  .tel-adress-link {
+    font-size: 36px;
+  }
 }
