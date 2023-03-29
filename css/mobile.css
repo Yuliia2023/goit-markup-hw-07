@@ -12,6 +12,6 @@
     margin-right: 56px;
   }
   .modal {
-    min-width: 408px;
+    max-width: 408px;
   }
 }
